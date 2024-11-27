@@ -22,6 +22,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> PLUTONIUM_BLOCK = registerBlock("plutonium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
     public static final DeferredBlock<Block> END_URANIUM_ORE = registerBlock("end_uranium_ore",
             () -> new EndUraniumOre(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 

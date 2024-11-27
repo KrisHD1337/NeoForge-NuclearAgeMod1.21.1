@@ -12,6 +12,9 @@ public class ModItems {
     public static final DeferredItem<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> PLUTONIUM_INGOT = ITEMS.register("plutonium_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium",
             () -> new Item(new Item.Properties()));
 

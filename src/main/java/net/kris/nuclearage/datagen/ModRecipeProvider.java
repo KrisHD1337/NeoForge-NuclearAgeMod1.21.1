@@ -28,9 +28,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.URANIUM_INGOT.get())
                 .unlockedBy("has_uranium", has(ModItems.URANIUM_INGOT)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get())
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.PLUTONIUM_INGOT.get())
+                .unlockedBy("has_plutonium", has(ModItems.PLUTONIUM_INGOT)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 9)
                 .requires(ModBlocks.URANIUM_BLOCK)
                 .unlockedBy("has_uranium_block", has(ModBlocks.URANIUM_BLOCK)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 9)
+                .requires(ModBlocks.PLUTONIUM_BLOCK)
+                .unlockedBy("has_uranium_block", has(ModBlocks.PLUTONIUM_BLOCK)).save(recipeOutput);
 
         oreSmelting(recipeOutput, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 200, "uranium");
         oreBlasting(recipeOutput, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 100, "uranium");

@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.URANIUM_BLOCK.get());
+        dropSelf(ModBlocks.PLUTONIUM_BLOCK.get());
 
         add(ModBlocks.END_URANIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.END_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 3, 10));

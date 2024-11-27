@@ -15,5 +15,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.URANIUM_INGOT.get());
         basicItem(ModItems.RAW_URANIUM.get());
+        basicItem(ModItems.PLUTONIUM_INGOT.get());
     }
 }

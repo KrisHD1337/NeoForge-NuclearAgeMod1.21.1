@@ -19,10 +19,11 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.URANIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.nuclearage.nuclear_age"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.URANIUM_INGOT);
                         output.accept(ModItems.RAW_URANIUM);
-
+                        output.accept(ModItems.URANIUM_INGOT);
                         output.accept(ModBlocks.URANIUM_BLOCK);
+                        output.accept(ModItems.PLUTONIUM_INGOT);
+                        output.accept(ModBlocks.PLUTONIUM_BLOCK);
                         output.accept(ModBlocks.END_URANIUM_ORE);
                     }).build());
 
