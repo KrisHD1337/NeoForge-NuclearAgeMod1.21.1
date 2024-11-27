@@ -1,6 +1,7 @@
 package net.kris.nuclearage;
 
 import net.kris.nuclearage.block.ModBlocks;
+import net.kris.nuclearage.effect.ModEffects;
 import net.kris.nuclearage.item.ModCreativeModeTabs;
 import net.kris.nuclearage.item.ModItems;
 import org.slf4j.Logger;
@@ -55,6 +56,8 @@ public class NuclearAge
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (NuclearAge) to respond directly to events.

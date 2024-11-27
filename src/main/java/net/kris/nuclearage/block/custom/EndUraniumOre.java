@@ -1,5 +1,6 @@
 package net.kris.nuclearage.block.custom;
 
+import net.kris.nuclearage.effect.ModEffects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -64,7 +65,7 @@ public class EndUraniumOre extends Block {
 
             if (radiationLevel > 0) {
                 // Apply or refresh the radiation effect
-                player.addEffect(new MobEffectInstance(MobEffects.POISON, RADIATION_DURATION, radiationLevel - 1, true, true));
+                player.addEffect(new MobEffectInstance(ModEffects.RADIATION_EFFECT, RADIATION_DURATION, radiationLevel - 1, true, true));
             }
         }
     }
