@@ -1,6 +1,7 @@
 package net.kris.nuclearage;
 
 import net.kris.nuclearage.block.ModBlocks;
+import net.kris.nuclearage.item.ModCreativeModeTabs;
 import net.kris.nuclearage.item.ModItems;
 import org.slf4j.Logger;
 
@@ -49,6 +50,8 @@ public class NuclearAge
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

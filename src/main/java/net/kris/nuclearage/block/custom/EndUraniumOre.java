@@ -14,7 +14,7 @@ import net.minecraft.util.RandomSource;
 public class EndUraniumOre extends Block {
 
     private static final double RADIUS = 20.0; // Effect radius in blocks
-    private static final int RADIATION_DURATION = 600; // 5 seconds (in ticks)
+    private static final int RADIATION_DURATION = 600; // 30 seconds (in ticks)
     private static final int SCHEDULE_INTERVAL = 20; // 1 second (in ticks)
 
     public EndUraniumOre(Properties properties) {
@@ -63,7 +63,7 @@ public class EndUraniumOre extends Block {
             int radiationLevel = calculatePoisonLevel(distanceSqr);
 
             if (radiationLevel > 0) {
-                // Apply or refresh the poison effect
+                // Apply or refresh the radiation effect
                 player.addEffect(new MobEffectInstance(MobEffects.POISON, RADIATION_DURATION, radiationLevel - 1, true, true));
             }
         }
@@ -72,11 +72,11 @@ public class EndUraniumOre extends Block {
     private int calculatePoisonLevel(double distanceSqr) {
         // Check distances using squared values for better performance
         if (distanceSqr < 400) {             // Within 20 blocks (20^2 = 400)
-            if (distanceSqr < 25) {           // Strong poison within 5 blocks (5^2 = 25)
+            if (distanceSqr < 25) {           // Strong radiation within 5 blocks (5^2 = 25)
                 return 3;
-            } else if (distanceSqr < 100) {   // Medium poison between 5–10 blocks (10^2 = 100)
+            } else if (distanceSqr < 100) {   // Medium radiation between 5–10 blocks (10^2 = 100)
                 return 2;
-            } else {                         // Weak poison between 10–20 blocks
+            } else {                         // Weak radiation between 10–20 blocks
                 return 1;
             }
         }
