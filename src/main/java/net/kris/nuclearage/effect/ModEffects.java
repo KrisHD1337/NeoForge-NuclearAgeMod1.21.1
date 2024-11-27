@@ -18,7 +18,7 @@ public class ModEffects {
     public static final Holder<MobEffect> RADIATION_EFFECT = MOB_EFFECTS.register("radiation",
             () -> new RadiationEffect(MobEffectCategory.HARMFUL, 0x9BBA8C)
                     .addAttributeModifier(Attributes.MOVEMENT_SPEED,
-                            ResourceLocation.fromNamespaceAndPath(NuclearAge.MODID, "radiation"), 0.8f,
+                            ResourceLocation.fromNamespaceAndPath(NuclearAge.MODID, "radiation"), -0.25f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static void register(IEventBus eventBus) {

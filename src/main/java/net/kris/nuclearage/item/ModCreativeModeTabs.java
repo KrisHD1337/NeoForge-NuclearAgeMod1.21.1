@@ -24,6 +24,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.URANIUM_BLOCK);
                         output.accept(ModItems.PLUTONIUM_INGOT);
                         output.accept(ModBlocks.PLUTONIUM_BLOCK);
+                        output.accept(ModBlocks.URANIUM_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE);
+                        output.accept(ModBlocks.NETHER_URANIUM_ORE);
                         output.accept(ModBlocks.END_URANIUM_ORE);
                     }).build());
 

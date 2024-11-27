@@ -32,8 +32,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.END_URANIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.END_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 3, 10));
-        // add(ModBlocks.URANIUM_ORE.get(),
-                // block -> createOreDrop(ModBlocks.URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
+        add(ModBlocks.URANIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
+        add(ModBlocks.NETHER_URANIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 2, 4));
+        add(ModBlocks.DEEPSLATE_URANIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 1, 2));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

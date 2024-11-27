@@ -29,6 +29,15 @@ public class ModBlocks {
     public static final DeferredBlock<Block> END_URANIUM_ORE = registerBlock("end_uranium_ore",
             () -> new EndUraniumOre(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> URANIUM_ORE = registerBlock("uranium_ore",
+            () -> new EndUraniumOre(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> NETHER_URANIUM_ORE = registerBlock("nether_uranium_ore",
+            () -> new EndUraniumOre(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_URANIUM_ORE = registerBlock("deepslate_uranium_ore",
+            () -> new EndUraniumOre(BlockBehaviour.Properties.of().strength(4.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

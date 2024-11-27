@@ -16,6 +16,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.URANIUM_BLOCK);
         blockWithItem(ModBlocks.END_URANIUM_ORE);
+        blockWithItem(ModBlocks.NETHER_URANIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_URANIUM_ORE);
+        blockWithItem(ModBlocks.URANIUM_ORE);
         blockWithItem(ModBlocks.PLUTONIUM_BLOCK);
     }
 

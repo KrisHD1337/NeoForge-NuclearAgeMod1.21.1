@@ -19,7 +19,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> URANIUM_SMELTABLES = List.of(ModItems.RAW_URANIUM,
-                ModBlocks.END_URANIUM_ORE);
+                ModBlocks.END_URANIUM_ORE, ModBlocks.NETHER_URANIUM_ORE, ModBlocks.DEEPSLATE_URANIUM_ORE, ModBlocks.URANIUM_ORE);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get())
                 .pattern("BBB")

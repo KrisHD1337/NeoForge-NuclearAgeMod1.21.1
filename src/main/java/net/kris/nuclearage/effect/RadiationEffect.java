@@ -8,6 +8,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 public class RadiationEffect extends MobEffect {
@@ -20,7 +21,9 @@ public class RadiationEffect extends MobEffect {
         Registry<DamageType> dTypeReg = livingEntity.damageSources().damageTypes;
             Holder.Reference<DamageType> dType = (Holder.Reference)dTypeReg.getHolder(NeoForgeMod.POISON_DAMAGE).orElse(dTypeReg.getHolderOrThrow(DamageTypes.GENERIC));
             livingEntity.hurt(new DamageSource(dType), 1.0F);
-
+        if (livingEntity instanceof Player player) {
+            player.causeFoodExhaustion(0.005F * (float)(amplifier + 1));
+        }
         return true;
     }
 

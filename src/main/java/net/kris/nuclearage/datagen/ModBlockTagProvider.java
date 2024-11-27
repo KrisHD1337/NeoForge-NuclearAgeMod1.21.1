@@ -21,10 +21,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.URANIUM_BLOCK.get())
                 .add(ModBlocks.END_URANIUM_ORE.get())
+                .add(ModBlocks.NETHER_URANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_URANIUM_ORE.get())
+                .add(ModBlocks.URANIUM_ORE.get())
                 .add(ModBlocks.PLUTONIUM_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.URANIUM_BLOCK.get());
+                .add(ModBlocks.URANIUM_BLOCK.get())
+                .add(ModBlocks.NETHER_URANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_URANIUM_ORE.get())
+                .add(ModBlocks.URANIUM_ORE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.END_URANIUM_ORE.get())
