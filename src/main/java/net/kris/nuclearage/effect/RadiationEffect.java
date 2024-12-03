@@ -20,7 +20,7 @@ public class RadiationEffect extends MobEffect {
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         Registry<DamageType> dTypeReg = livingEntity.damageSources().damageTypes;
             Holder.Reference<DamageType> dType = (Holder.Reference)dTypeReg.getHolder(NeoForgeMod.POISON_DAMAGE).orElse(dTypeReg.getHolderOrThrow(DamageTypes.GENERIC));
-            livingEntity.hurt(new DamageSource(dType), 1.0F);
+            livingEntity.hurt(new DamageSource(dType), 0.5F);
         if (livingEntity instanceof Player player) {
             player.causeFoodExhaustion(0.005F * (float)(amplifier + 1));
         }

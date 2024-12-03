@@ -29,7 +29,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.URANIUM_BLOCK.get());
         dropSelf(ModBlocks.PLUTONIUM_BLOCK.get());
+        dropSelf(ModBlocks.NUCLEAR_WASTE_BLOCK.get());
+        dropSelf(ModBlocks.RAW_SILVER_BLOCK.get());
+        dropSelf(ModBlocks.RAW_ZIRCONIUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
+        dropSelf(ModBlocks.ZIRCONIUM_BLOCK.get());
+        dropSelf(ModBlocks.SILVER_BLOCK.get());
+        dropSelf(ModBlocks.INDIUM_BLOCK.get());
 
+
+        add(ModBlocks.ZIRCONIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.ZIRCONIUM_ORE.get(), ModItems.RAW_ZIRCONIUM.get()));
+        add(ModBlocks.CADMIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.CADMIUM_ORE.get(), ModItems.RAW_CADMIUM.get()));
+        add(ModBlocks.SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
+        add(ModBlocks.INDIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.INDIUM_ORE.get(), ModItems.INDIUM_DUST.get(), 2, 4));
         add(ModBlocks.END_URANIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.END_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 3, 10));
         add(ModBlocks.URANIUM_ORE.get(),

@@ -16,5 +16,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.URANIUM_INGOT.get());
         basicItem(ModItems.RAW_URANIUM.get());
         basicItem(ModItems.PLUTONIUM_INGOT.get());
+        basicItem(ModItems.RAW_CADMIUM.get());
+        basicItem(ModItems.RAW_ZIRCONIUM.get());
+        basicItem(ModItems.RAW_SILVER.get());
+        basicItem(ModItems.INDIUM_DUST.get());
+        basicItem(ModItems.SILVER_INGOT.get());
+        basicItem(ModItems.ZIRCONIUM_INGOT.get());
+        basicItem(ModItems.CADMIUM.get());
     }
 }

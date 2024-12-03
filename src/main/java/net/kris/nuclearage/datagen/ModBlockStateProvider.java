@@ -20,6 +20,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_URANIUM_ORE);
         blockWithItem(ModBlocks.URANIUM_ORE);
         blockWithItem(ModBlocks.PLUTONIUM_BLOCK);
+        blockWithItem(ModBlocks.NUCLEAR_WASTE_BLOCK);
+        blockWithItem(ModBlocks.ZIRCONIUM_BLOCK);
+        blockWithItem(ModBlocks.ZIRCONIUM_ORE);
+        blockWithItem(ModBlocks.RAW_ZIRCONIUM_BLOCK);
+        blockWithItem(ModBlocks.SILVER_BLOCK);
+        blockWithItem(ModBlocks.SILVER_ORE);
+        blockWithItem(ModBlocks.RAW_SILVER_BLOCK);
+        blockWithItem(ModBlocks.INDIUM_BLOCK);
+        blockWithItem(ModBlocks.INDIUM_ORE);
+        blockWithItem(ModBlocks.CADMIUM_ORE);
+        blockWithItem(ModBlocks.RAW_URANIUM_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

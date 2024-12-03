@@ -18,6 +18,30 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RAW_CADMIUM = ITEMS.register("raw_cadmium",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_ZIRCONIUM = ITEMS.register("raw_zirconium",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_SILVER = ITEMS.register("raw_silver",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CADMIUM = ITEMS.register("cadmium",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ZIRCONIUM_INGOT = ITEMS.register("zirconium_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> INDIUM_DUST = ITEMS.register("indium_dust",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> NUCLEAR_WASTE = ITEMS.register("nuclear_waste",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

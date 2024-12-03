@@ -24,16 +24,38 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_URANIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_URANIUM_ORE.get())
                 .add(ModBlocks.URANIUM_ORE.get())
-                .add(ModBlocks.PLUTONIUM_BLOCK.get());
+                .add(ModBlocks.PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.NUCLEAR_WASTE_BLOCK.get())
+                .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                .add(ModBlocks.RAW_SILVER_BLOCK.get())
+                .add(ModBlocks.RAW_ZIRCONIUM_BLOCK.get())
+                .add(ModBlocks.ZIRCONIUM_ORE.get())
+                .add(ModBlocks.ZIRCONIUM_BLOCK.get())
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.SILVER_BLOCK.get())
+                .add(ModBlocks.INDIUM_BLOCK.get())
+                .add(ModBlocks.INDIUM_ORE.get())
+                .add(ModBlocks.CADMIUM_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.URANIUM_BLOCK.get())
                 .add(ModBlocks.NETHER_URANIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_URANIUM_ORE.get())
-                .add(ModBlocks.URANIUM_ORE.get());
+                .add(ModBlocks.URANIUM_ORE.get())
+                .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                .add(ModBlocks.RAW_SILVER_BLOCK.get())
+                .add(ModBlocks.RAW_ZIRCONIUM_BLOCK.get())
+                .add(ModBlocks.ZIRCONIUM_ORE.get())
+                .add(ModBlocks.ZIRCONIUM_BLOCK.get())
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.SILVER_BLOCK.get())
+                .add(ModBlocks.INDIUM_BLOCK.get())
+                .add(ModBlocks.INDIUM_ORE.get())
+                .add(ModBlocks.NUCLEAR_WASTE_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.END_URANIUM_ORE.get())
-                .add(ModBlocks.PLUTONIUM_BLOCK.get());
+                .add(ModBlocks.PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.CADMIUM_ORE.get());
     }
 }

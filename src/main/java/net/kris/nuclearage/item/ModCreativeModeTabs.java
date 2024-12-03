@@ -19,15 +19,32 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.URANIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.nuclearage.nuclear_age"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.RAW_URANIUM);
-                        output.accept(ModItems.URANIUM_INGOT);
-                        output.accept(ModBlocks.URANIUM_BLOCK);
-                        output.accept(ModItems.PLUTONIUM_INGOT);
-                        output.accept(ModBlocks.PLUTONIUM_BLOCK);
                         output.accept(ModBlocks.URANIUM_ORE);
                         output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE);
                         output.accept(ModBlocks.NETHER_URANIUM_ORE);
                         output.accept(ModBlocks.END_URANIUM_ORE);
+                        output.accept(ModItems.RAW_URANIUM);
+                        output.accept(ModBlocks.RAW_URANIUM_BLOCK);
+                        output.accept(ModItems.URANIUM_INGOT);
+                        output.accept(ModBlocks.URANIUM_BLOCK);
+                        output.accept(ModItems.PLUTONIUM_INGOT);
+                        output.accept(ModBlocks.PLUTONIUM_BLOCK);
+                        output.accept(ModBlocks.ZIRCONIUM_ORE);
+                        output.accept(ModItems.RAW_ZIRCONIUM);
+                        output.accept(ModBlocks.RAW_ZIRCONIUM_BLOCK);
+                        output.accept(ModItems.ZIRCONIUM_INGOT);
+                        output.accept(ModBlocks.ZIRCONIUM_BLOCK);
+                        output.accept(ModBlocks.CADMIUM_ORE);
+                        output.accept(ModItems.RAW_CADMIUM);
+                        output.accept(ModItems.CADMIUM);
+                        output.accept(ModBlocks.SILVER_ORE);
+                        output.accept(ModItems.RAW_SILVER);
+                        output.accept(ModBlocks.RAW_SILVER_BLOCK);
+                        output.accept(ModItems.SILVER_INGOT);
+                        output.accept(ModBlocks.SILVER_BLOCK);
+                        output.accept(ModBlocks.INDIUM_ORE);
+                        output.accept(ModItems.INDIUM_DUST);
+                        output.accept(ModBlocks.INDIUM_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {
