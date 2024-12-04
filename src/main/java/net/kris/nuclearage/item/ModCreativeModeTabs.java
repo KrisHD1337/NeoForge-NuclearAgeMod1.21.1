@@ -45,6 +45,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.INDIUM_ORE);
                         output.accept(ModItems.INDIUM_DUST);
                         output.accept(ModBlocks.INDIUM_BLOCK);
+                        output.accept(ModItems.NUCLEAR_WASTE);
+                        output.accept(ModBlocks.NUCLEAR_WASTE_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {
