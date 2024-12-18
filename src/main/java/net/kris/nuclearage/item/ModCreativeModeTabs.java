@@ -47,6 +47,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.INDIUM_BLOCK);
                         output.accept(ModItems.NUCLEAR_WASTE);
                         output.accept(ModBlocks.NUCLEAR_WASTE_BLOCK);
+                        output.accept(ModItems.GRAPHITE);
+                        output.accept(ModBlocks.GRAPHITE_BLOCK);
+                        output.accept(ModItems.STEEL_INGOT);
+                        output.accept(ModBlocks.STEEL_BLOCK);
+                        output.accept(ModBlocks.BORAX_ORE);
+                        output.accept(ModItems.BORAX);
+                        output.accept(ModItems.BORIC_ACID);
+                        output.accept(ModBlocks.BORON_TRIOXIDE);
+                        output.accept(ModItems.BLACK_DIAMOND);
+                        output.accept(ModBlocks.BLACK_DIAMOND_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

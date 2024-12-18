@@ -36,10 +36,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ZIRCONIUM_BLOCK.get());
         dropSelf(ModBlocks.SILVER_BLOCK.get());
         dropSelf(ModBlocks.INDIUM_BLOCK.get());
+        dropSelf(ModBlocks.GRAPHITE_BLOCK.get());
+        dropSelf(ModBlocks.STEEL_BLOCK.get());
+        dropSelf(ModBlocks.BLACK_DIAMOND_BLOCK.get());
+        dropSelf(ModBlocks.BORON_TRIOXIDE.get());
 
 
         add(ModBlocks.ZIRCONIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.ZIRCONIUM_ORE.get(), ModItems.RAW_ZIRCONIUM.get()));
+        add(ModBlocks.BORAX_ORE.get(),
+                block -> createOreDrop(ModBlocks.BORAX_ORE.get(), ModItems.BORAX.get()));
         add(ModBlocks.CADMIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.CADMIUM_ORE.get(), ModItems.RAW_CADMIUM.get()));
         add(ModBlocks.SILVER_ORE.get(),

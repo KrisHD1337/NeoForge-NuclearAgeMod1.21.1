@@ -30,7 +30,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.URANIUM_INGOT.get())
                 .add(ModItems.SILVER_INGOT.get())
                 .add(ModItems.ZIRCONIUM_INGOT.get())
-                .add(ModItems.PLUTONIUM_INGOT.get());
+                .add(ModItems.PLUTONIUM_INGOT.get())
+                .add(ModItems.STEEL_INGOT.get());
 
         this.tag(Tags.Items.RAW_MATERIALS)
                 .add(ModItems.RAW_URANIUM.get())
@@ -58,5 +59,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RAW_SILVER.get());
         this.tag(ModTags.Items.RAW_CADMIUM)
                 .add(ModItems.RAW_CADMIUM.get());
+        this.tag(ModTags.Items.STEEL)
+                .add(ModItems.STEEL_INGOT.get());
     }
 }

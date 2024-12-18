@@ -27,7 +27,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_SILVER_BLOCK.get())
                 .add(ModBlocks.RAW_ZIRCONIUM_BLOCK.get())
                 .add(ModBlocks.SILVER_BLOCK.get())
-                .add(ModBlocks.INDIUM_BLOCK.get());
+                .add(ModBlocks.INDIUM_BLOCK.get())
+                .add(ModBlocks.GRAPHITE_BLOCK.get())
+                .add(ModBlocks.STEEL_BLOCK.get());
 
         tag(Tags.Blocks.ORES)
                 .add(ModBlocks.URANIUM_ORE.get())
@@ -67,6 +69,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SILVER_ORE.get());
         tag(ModTags.Blocks.INDIUM_ORE)
                 .add(ModBlocks.INDIUM_ORE.get());
+        tag(ModTags.Blocks.GRAPHITE)
+                .add(ModBlocks.GRAPHITE_BLOCK.get());
+        tag(ModTags.Blocks.STEEL)
+                .add(ModBlocks.STEEL_BLOCK.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.URANIUM_BLOCK.get())
@@ -85,7 +91,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SILVER_BLOCK.get())
                 .add(ModBlocks.INDIUM_BLOCK.get())
                 .add(ModBlocks.INDIUM_ORE.get())
-                .add(ModBlocks.CADMIUM_ORE.get());
+                .add(ModBlocks.CADMIUM_ORE.get())
+                .add(ModBlocks.GRAPHITE_BLOCK.get())
+                .add(ModBlocks.STEEL_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.URANIUM_BLOCK.get())
@@ -101,7 +109,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SILVER_BLOCK.get())
                 .add(ModBlocks.INDIUM_BLOCK.get())
                 .add(ModBlocks.INDIUM_ORE.get())
-                .add(ModBlocks.NUCLEAR_WASTE_BLOCK.get());
+                .add(ModBlocks.NUCLEAR_WASTE_BLOCK.get())
+                .add(ModBlocks.GRAPHITE_BLOCK.get())
+                .add(ModBlocks.STEEL_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.END_URANIUM_ORE.get())

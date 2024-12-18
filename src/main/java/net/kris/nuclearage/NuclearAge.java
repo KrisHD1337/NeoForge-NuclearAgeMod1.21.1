@@ -4,10 +4,11 @@ import net.kris.nuclearage.block.ModBlocks;
 import net.kris.nuclearage.effect.ModEffects;
 import net.kris.nuclearage.item.ModCreativeModeTabs;
 import net.kris.nuclearage.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -96,7 +97,8 @@ public class NuclearAge
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.BORON_TRIOXIDE.get(), RenderType.translucent());
         }
     }
+
 }

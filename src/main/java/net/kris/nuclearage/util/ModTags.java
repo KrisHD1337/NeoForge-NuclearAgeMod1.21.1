@@ -22,6 +22,8 @@ public class ModTags {
         public static final TagKey<Block> RAW_URANIUM = commonTag("storage_blocks/raw_uranium");
         public static final TagKey<Block> RAW_ZIRCONIUM = commonTag("storage_blocks/raw_zirconium");
         public static final TagKey<Block> RAW_SILVER = commonTag("storage_blocks/raw_silver");
+        public static final TagKey<Block> STEEL = commonTag("storage_blocks/steel");
+        public static final TagKey<Block> GRAPHITE = commonTag("storage_blocks/graphite");
         public static final TagKey<Block> URANIUM_ORE = commonTag("ores/uranium");
         public static final TagKey<Block> ZIRCONIUM_ORE = commonTag("ores/zirconium");
         public static final TagKey<Block> INDIUM_ORE = commonTag("ores/indium");
@@ -39,6 +41,7 @@ public class ModTags {
         public static final TagKey<Item> CADMIUM = commonTag("ingots/cadmium");
         public static final TagKey<Item> SILVER = commonTag("ingots/silver");
         public static final TagKey<Item> PLUTONIUM = commonTag("ingots/plutonium");
+        public static final TagKey<Item> STEEL = commonTag("ingots/steel");
 
         public static final TagKey<Item> RAW_URANIUM = commonTag("raw_materials/uranium");
         public static final TagKey<Item> RAW_ZIRCONIUM = commonTag("raw_materials/zirconium");
