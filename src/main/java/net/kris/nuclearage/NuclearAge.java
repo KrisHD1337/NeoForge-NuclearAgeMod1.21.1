@@ -4,6 +4,7 @@ import net.kris.nuclearage.block.ModBlocks;
 import net.kris.nuclearage.effect.ModEffects;
 import net.kris.nuclearage.item.ModCreativeModeTabs;
 import net.kris.nuclearage.item.ModItems;
+import net.kris.nuclearage.util.ModEventHandler;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import org.slf4j.Logger;
@@ -57,6 +58,8 @@ public class NuclearAge
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        NeoForge.EVENT_BUS.register(new ModEventHandler());
 
         ModEffects.register(modEventBus);
 

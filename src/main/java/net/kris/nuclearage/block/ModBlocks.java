@@ -3,7 +3,6 @@ package net.kris.nuclearage.block;
 import net.kris.nuclearage.NuclearAge;
 import net.kris.nuclearage.block.custom.*;
 import net.kris.nuclearage.item.ModItems;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -101,6 +100,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> NUCLEAR_WASTE_BLOCK = registerBlock("nuclear_waste_block",
             () -> new NuclearWasteBlock(BlockBehaviour.Properties.of().strength(4.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> REACTOR_CORE = BLOCKS.register("reactor_core",
+        () -> new ReactorCoreBlock(BlockBehaviour.Properties.of().strength(3.0f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
