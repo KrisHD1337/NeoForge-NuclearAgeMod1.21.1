@@ -52,8 +52,6 @@ public class ModConfiguredFeatures {
                 ModBlocks.INDIUM_ORE.get().defaultBlockState(), 9));
         register(context, CADMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
                 ModBlocks.CADMIUM_ORE.get().defaultBlockState(), 9));
-        register(context, BORAX_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceables,
-                ModBlocks.BORAX_ORE.get().defaultBlockState(), 9));
         register(context, ZIRCONIUM_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceables,
                 ModBlocks.ZIRCONIUM_ORE.get().defaultBlockState(), 9));
 

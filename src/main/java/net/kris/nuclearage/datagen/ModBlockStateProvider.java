@@ -33,9 +33,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_URANIUM_BLOCK);
         blockWithItem(ModBlocks.GRAPHITE_BLOCK);
         blockWithItem(ModBlocks.STEEL_BLOCK);
-        blockWithItem(ModBlocks.BLACK_DIAMOND_BLOCK);
-        blockWithItem(ModBlocks.BORAX_ORE);
-        blockWithItem(ModBlocks.BORON_TRIOXIDE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

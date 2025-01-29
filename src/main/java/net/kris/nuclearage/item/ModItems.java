@@ -48,15 +48,6 @@ public class ModItems {
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> BLACK_DIAMOND = ITEMS.register("black_diamond",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> BORIC_ACID = ITEMS.register("boric_acid",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> BORAX = ITEMS.register("borax",
-            () -> new Item(new Item.Properties()));
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -80,7 +80,6 @@ public class NuclearAge
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.BORON_TRIOXIDE.get(), RenderType.translucent());
         }
     }
 

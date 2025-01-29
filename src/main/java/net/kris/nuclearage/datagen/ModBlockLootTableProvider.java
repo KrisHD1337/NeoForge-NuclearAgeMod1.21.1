@@ -38,14 +38,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.INDIUM_BLOCK.get());
         dropSelf(ModBlocks.GRAPHITE_BLOCK.get());
         dropSelf(ModBlocks.STEEL_BLOCK.get());
-        dropSelf(ModBlocks.BLACK_DIAMOND_BLOCK.get());
-        dropSelf(ModBlocks.BORON_TRIOXIDE.get());
 
 
         add(ModBlocks.ZIRCONIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.ZIRCONIUM_ORE.get(), ModItems.RAW_ZIRCONIUM.get()));
-        add(ModBlocks.BORAX_ORE.get(),
-                block -> createOreDrop(ModBlocks.BORAX_ORE.get(), ModItems.BORAX.get()));
         add(ModBlocks.CADMIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.CADMIUM_ORE.get(), ModItems.RAW_CADMIUM.get()));
         add(ModBlocks.SILVER_ORE.get(),
@@ -57,7 +53,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.URANIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
         add(ModBlocks.NETHER_URANIUM_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.NETHER_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.NETHER_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 1, 1));
         add(ModBlocks.DEEPSLATE_URANIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get(), 1, 2));
     }

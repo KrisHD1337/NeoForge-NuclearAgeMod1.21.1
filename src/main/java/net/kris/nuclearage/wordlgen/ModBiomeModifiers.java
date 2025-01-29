@@ -18,7 +18,6 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SILVER_ORE = registerKey("add_silver_ore");
     public static final ResourceKey<BiomeModifier> ADD_INDIUM_ORE = registerKey("add_indium_ore");
     public static final ResourceKey<BiomeModifier> ADD_CADMIUM_ORE = registerKey("add_cadmium_ore");
-    public static final ResourceKey<BiomeModifier> ADD_BORAX_ORE = registerKey("add_borax_ore");
     public static final ResourceKey<BiomeModifier> ADD_ZIRCONIUM_ORE = registerKey("add_zirconium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_URANIUM_ORE = registerKey("add_nether_uranium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_URANIUM_ORE = registerKey("add_end_uranium_ore");
@@ -45,11 +44,6 @@ public class ModBiomeModifiers {
         context.register(ADD_SILVER_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SILVER_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
-
-        context.register(ADD_BORAX_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.BORAX_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_NETHER_URANIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(

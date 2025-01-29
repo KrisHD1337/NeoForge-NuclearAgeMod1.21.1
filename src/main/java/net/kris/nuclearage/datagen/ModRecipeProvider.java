@@ -102,13 +102,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.STEEL_INGOT.get())
                 .unlockedBy("has_steel_ingot", has(ModItems.STEEL_INGOT)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_DIAMOND_BLOCK.get())
-                .pattern("BBB")
-                .pattern("BBB")
-                .pattern("BBB")
-                .define('B', ModItems.BLACK_DIAMOND.get())
-                .unlockedBy("has_black_diamond", has(ModItems.BLACK_DIAMOND)).save(recipeOutput);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GRAPHITE_BLOCK.get())
                 .pattern("BBB")
                 .pattern("BBB")
@@ -119,10 +112,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 9)
                 .requires(ModBlocks.URANIUM_BLOCK)
                 .unlockedBy("has_uranium_block", has(ModBlocks.URANIUM_BLOCK)).save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_DIAMOND.get(), 9)
-                .requires(ModBlocks.BLACK_DIAMOND_BLOCK)
-                .unlockedBy("has_black_diamond_block", has(ModBlocks.BLACK_DIAMOND_BLOCK)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
                 .requires(ModBlocks.SILVER_BLOCK)

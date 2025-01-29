@@ -26,8 +26,5 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NUCLEAR_WASTE.get());
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.GRAPHITE.get());
-        basicItem(ModItems.BORIC_ACID.get());
-        basicItem(ModItems.BLACK_DIAMOND.get());
-        basicItem(ModItems.BORAX.get());
     }
 }
