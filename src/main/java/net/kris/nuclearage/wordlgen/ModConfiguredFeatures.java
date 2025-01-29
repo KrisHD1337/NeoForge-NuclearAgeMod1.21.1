@@ -25,7 +25,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = registerKey("silver_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> INDIUM_ORE_KEY = registerKey("indium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CADMIUM_ORE_KEY = registerKey("cadmium_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BORAX_ORE_KEY = registerKey("borax_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ZIRCONIUM_ORE_KEY = registerKey("zirconium_ore");
 
 

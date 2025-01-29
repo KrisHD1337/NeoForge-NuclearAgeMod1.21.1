@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_ZIRCONIUM_BLOCK);
                         output.accept(ModItems.ZIRCONIUM_INGOT);
                         output.accept(ModBlocks.ZIRCONIUM_BLOCK);
+                        output.accept(ModItems.CLADDING);
                         output.accept(ModBlocks.CADMIUM_ORE);
                         output.accept(ModItems.RAW_CADMIUM);
                         output.accept(ModItems.CADMIUM);
@@ -51,6 +52,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GRAPHITE_BLOCK);
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModBlocks.STEEL_BLOCK);
+                        output.accept(ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT);
+                        output.accept(ModBlocks.SILVER_INDIUM_CADMIUM_ALLOY_BLOCK);
+                        output.accept(ModItems.CONTORL_ROD);
                     }).build());
 
     public static void register(IEventBus eventBus) {

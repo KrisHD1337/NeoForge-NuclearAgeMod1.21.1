@@ -38,6 +38,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.INDIUM_BLOCK.get());
         dropSelf(ModBlocks.GRAPHITE_BLOCK.get());
         dropSelf(ModBlocks.STEEL_BLOCK.get());
+        dropSelf(ModBlocks.SILVER_INDIUM_CADMIUM_ALLOY_BLOCK.get());
 
 
         add(ModBlocks.ZIRCONIUM_ORE.get(),

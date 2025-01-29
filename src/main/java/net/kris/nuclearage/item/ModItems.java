@@ -48,6 +48,15 @@ public class ModItems {
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CLADDING = ITEMS.register("cladding",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CONTORL_ROD = ITEMS.register("control_rod",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SILVER_INDIUM_CADMIUM_ALLOY_INGOT = ITEMS.register("silver_indium_cadmium_alloy_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

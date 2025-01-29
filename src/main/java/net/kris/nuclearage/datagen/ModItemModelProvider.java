@@ -26,5 +26,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NUCLEAR_WASTE.get());
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.GRAPHITE.get());
+        basicItem(ModItems.CLADDING.get());
+        basicItem(ModItems.CONTORL_ROD.get());
+        basicItem(ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT.get());
     }
 }

@@ -5,7 +5,9 @@ import net.kris.nuclearage.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.AirItem;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -109,6 +111,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.GRAPHITE.get())
                 .unlockedBy("has_graphite", has(ModItems.GRAPHITE)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVER_INDIUM_CADMIUM_ALLOY_BLOCK.get())
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT.get())
+                .unlockedBy("has_silver_indium_cadmium_alloy_ingot", has(ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CLADDING.get())
+                .pattern("B")
+                .pattern("B")
+                .pattern("B")
+                .define('B', ModItems.ZIRCONIUM_INGOT.get())
+                .unlockedBy("has_zirconium", has(ModItems.ZIRCONIUM_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONTORL_ROD.get())
+                .pattern("B")
+                .pattern("B")
+                .pattern("B")
+                .define('B', ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT.get())
+                .unlockedBy("has_silver_indium_cadmium_alloy_ingot", has(ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 9)
                 .requires(ModBlocks.URANIUM_BLOCK)
                 .unlockedBy("has_uranium_block", has(ModBlocks.URANIUM_BLOCK)).save(recipeOutput);
@@ -152,6 +175,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 9)
                 .requires(ModBlocks.STEEL_BLOCK)
                 .unlockedBy("has_steel_block", has(ModBlocks.STEEL_BLOCK)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INDIUM_CADMIUM_ALLOY_INGOT.get(), 9)
+                .requires(ModBlocks.SILVER_INDIUM_CADMIUM_ALLOY_BLOCK)
+                .unlockedBy("has_silver_indium_cadmium_alloy_block", has(ModBlocks.SILVER_INDIUM_CADMIUM_ALLOY_BLOCK)).save(recipeOutput);
 
         oreSmelting(recipeOutput, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 200, "uranium");
         oreBlasting(recipeOutput, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 100, "uranium");
